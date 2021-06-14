@@ -1,0 +1,74 @@
+@media only screen and (max-width: 500px){
+    .banner_title h2{
+        font-size: 30px;
+        margin-left: 20%;
+    }
+
+    .banner_shape p:nth-child(1), p:nth-child(2), p:nth-child(3){
+      display: none;
+    }
+
+    .banner_text{
+        margin-top: -30px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .banner_price{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .banner button{
+        margin-left: 25%;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    nav .navbar-collapse{
+        margin-top: 18px;
+        position: relative;
+    }
+
+    nav .container .navbar-nav{
+        position: relative;
+        background: #fff;
+        height: 308px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav .nav-link{
+        display: inline-block;
+    }
+
+
+    .navbar-nav .dropdown-menu{
+        position: absolute !important;
+        margin-top: -20px;
+        margin-left: 80px;
+        z-index: 1;
+    }
+
+    .inston_title p {
+        font-size: 20px;
+    }
+
+    .inston_title h2{
+        font-size: 30px;
+    }
+
+    .inston{
+        padding: 0 0 ;
+        width: 100%;
+    }
+
+    .inston i{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .inston_title_footer p{
+        font-size: 15px;
+    }
+
+}

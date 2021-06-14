@@ -1,0 +1,1423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-image: url('../img/slide/slider-1.jpg');
+    background-size: contain;
+    background-size: 80%;
+    background-position: right top;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+header nav{
+    height: 90px;
+    transition: all .3s ease-in-out;
+}
+
+.nav-item{
+    margin: 0 10px;
+
+}
+
+header .nav-item > a{
+    font-weight: bold;
+    color: #333;
+    font-family: -webkit-pictograph;
+    transition: all .4s ease;
+}
+
+header .nav-item > a:hover{
+    color: #e18b1d;
+}
+
+header .nav-item a.active{
+    color: #e18b1d;
+}
+
+header .icon{
+    display: flex;
+    margin: 10px 10px;
+}
+
+header .dropdown-menu{
+    box-shadow: -5px 6px 10px rgb(0 0 0 / 50%);
+    border: none;
+}
+
+header .icon .bar_menu{
+    margin-right: 20px;
+}
+
+.banner .shape_img{
+    z-index: -1;
+   animation: box 5s ease-in-out infinite alternate;
+}
+
+@keyframes box {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.banner .box{
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.banner .box-mini{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 60px;
+    margin-top: 20px; 
+   
+}
+
+.banner .box-mini img{
+    animation: box 5s ease-in-out infinite alternate;
+}
+
+.banner .box-normal{
+    position: absolute;
+    bottom: -46px;
+    left: 35%;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 60px;
+    margin-top: 20px; 
+   
+}
+
+.banner .box-normal img{
+    animation: box 5s ease-in-out infinite alternate;
+}
+
+.banner_title{
+    position: relative;
+    height: 80px;
+}
+
+.banner_title h2{
+    color: rgb(24, 33, 46);
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -1px;
+    position: absolute;
+    top: -62px;
+}
+
+.banner_text{
+    color: grey;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.banner_price{
+    color: #e18b1d;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 20px;
+    
+}
+
+.banner button{
+    margin-top: 30px;
+    background: #e18b1d;
+    color: #fff;
+    height: 60px;
+    padding: 0 40px;
+    border-radius: none;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.banner button:hover{
+    background: #b6731b;
+}
+
+.banner_shape{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner_shape p{
+    background: rgb(24, 33, 46);;
+    display: inline-block;
+    color: #fff;
+    border-radius: 50px;
+    padding: 16px 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.banner_shape p:nth-child(1){
+    position: absolute;
+    bottom: 230px;
+    left: -135px;
+}
+
+.banner_shape p:nth-child(2){
+    position: absolute;
+    bottom: 268px;
+    right: -33px
+}
+
+.banner_shape p:nth-child(3){
+    position: absolute;
+    top: 160px;
+    right: -33px
+}
+
+button.navbar-toggler{
+    outline: none;
+   border: 2px solid;
+}
+
+
+
+/* ==================== Sticky =================== */
+
+.sticky-scroll{
+    position: fixed !important;
+    width: 100%;
+    background: #fff;
+    box-shadow: 3px 3px 7px rgba(0 0 0 / 30%);
+    transition: all .5s ease-in-out;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+/* ================================================ */
+
+/* ======================= Container =============================== */
+.inston_tasks{
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 15%;
+}
+
+.inston_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.inston_title h2{
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+
+.inston_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+}
+
+.inston_load::before{
+    content: '|';
+    position: absolute;
+    left: 49.3%;
+    animation: left 1.5s ease-in-out infinite alternate;
+}
+
+.inston_load::after{
+    content: '|';
+    position: absolute;
+    animation: right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.inston_tasks .row{
+    margin-top: 50px;
+}
+
+.inston{
+    border: 1px solid #eee;
+    padding: 53px 20px;
+    width: 250px;
+} 
+
+.inston i{
+    color: #e18b1d;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.inston:hover{
+    border: 1px solid #e18b1d;
+    box-shadow: 0 5px 26px rgb(0 0 0 / 20%);
+    transition: all .8s ease;
+}
+
+.inston_title_footer p{
+    margin-top: 43px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+    border-bottom: 1px solid;
+    display: inline-block;
+    color: #e18b1d;
+    transition: all 0.2s ease-in-out;
+}
+
+.inston_title_footer p:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+/* ========================================= SERVICE ====================================== */
+.service{
+    background: #18212e;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.service .container{
+    padding: 6% 0;
+}
+
+.service_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.service_title h2{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+
+.service_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+}
+
+.service_load::before{
+    content: '|';
+    position: absolute;
+    left: 49.3%;
+    animation: left 1.5s ease-in-out infinite alternate;
+}
+
+.service_load::after{
+    content: '|';
+    position: absolute;
+    animation: right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.service_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.service .row{
+    margin-top:60px ;
+}
+
+.service_inner {
+    text-align: left;
+    margin-top: 30px;
+    padding: 50px 40px;
+}
+
+.service_inner .service_title h3{
+    transition: all .3s ease-in-out;
+    font-size: 30px;
+    letter-spacing: -2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.service_inner .service_icon{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service_inner .service_description p{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 23px;
+}
+
+
+.service_inner .service_readmore{
+    text-align: center;
+}
+
+.service_inner .service_readmore a{
+    color: #e18b1d;
+    border-bottom: 1px solid #e18b1d;
+    padding-bottom: 1px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+
+.service_inner .service_readmore a:hover{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.service_inner .service_title h3:hover{ 
+    color: #e18b1d;
+}
+
+.service_img .service_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 33, 46, 0.9);
+    color: #fff;
+    display: none;
+}
+
+.service_img:hover .service_content{
+    display: block;
+    animation: service .6s ease-in-out;
+}
+
+@keyframes service {
+    0%{
+        transform: translateY(-396px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* =================================== TESTIMONIALS ========================================= */
+
+.testimonial_img img{
+    width: 100%;
+    height: 105%;
+}
+
+.testimonials .container{
+    margin-bottom: 10%;
+}
+
+.testimonials .testimonials_containt{
+    margin-top: 9%;
+    text-align: left;
+}
+
+.testimonials_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.testimonials_title h2{
+    color: #18212e;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+
+.testimonials_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+    margin-left: 12px;
+}
+
+.testimonials_load::before{
+    content: '__';
+    position: absolute;
+    top: -7px;  
+    animation: top 1.5s ease-in-out infinite alternate;
+}
+
+.testimonials_load::after{
+    content: '__';
+    position: absolute;
+    animation: bottom 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes top {
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes bottom {
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+.testimonials_node{
+    margin-top: 20px;
+}
+
+.testimonials_desc p{
+    color: grey;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2;
+    font-family: cursive;
+    letter-spacing: -0.36px;
+    margin-bottom: 40px;
+}
+
+.testimonials_name p{
+    color: #e18b1d;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    color: #e18b1d;
+    border-bottom: 1px solid #e18b1d;
+    display: inline-block;
+    
+}
+.testimonials_job{
+    color: grey;
+}
+
+.owl-prev{
+    left: 0;
+}
+
+.owl-next{
+    left: 60px;
+}
+
+.owl-next, .owl-prev{
+    position: absolute;
+}
+
+.owl-prev span, .owl-next span{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 300;
+    color: grey;
+    transition: all .4s ease;
+}
+.owl-prev span:hover, .owl-next span:hover{
+    border: 2px solid #e18b1d;
+    border-radius: 50%;
+    color: #e18b1d;
+    box-shadow: 3px 3px 7px rgba(0 0 0 / 20%);
+}
+
+/* ===================================== PRICING ===================================== */
+
+.pricing .container{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.pricing_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.pricing_title h2{
+    color: #18212e;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+
+.pricing_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+}
+
+.pricing_load::before{
+    content: '|';
+    position: absolute;
+    left: 49.3%;  
+    animation: left 1.5s ease-in-out infinite alternate;
+}
+
+.pricing_load::after{
+    content: '|';
+    position: absolute;
+    animation: right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.pricing .row{
+    margin-top: 100px;
+}
+
+.pricing .card_body{
+    padding: 35px 40px;
+}
+
+.pricing .card_price{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing .card_icon{
+    margin-bottom: 20px;
+}
+
+.pricing .card_price p.name{
+    font-weight: 400;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+
+.pricing .card_price p.price{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -1.8px;
+    color: #e18b1d;
+    margin-bottom: 0;
+}
+
+.pricing .card_price .month{
+    color: #7B7F85;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+}
+
+.pricing .card_content{
+    margin: 35px 0;
+    text-align: left;
+    font-size: 15px;
+}
+
+.pricing .card_content i{
+    color: #e18b1d;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.pricing .card_content .text{
+    padding-left: 10px;
+    color: #7B7F85;
+    letter-spacing: -1px;
+}
+
+.pricing .card_subnow a{
+    color: #fff;
+    background: #e18b1d;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 16px 0px;
+    width: 100%;
+}
+
+.pricing .card_subnow a:hover{
+    background: #a86916;
+}
+
+.pricing .card{
+    transition: all .1s ease;
+    border-radius:0 ;
+}
+
+.pricing .card:hover{
+    border: 1px solid #e18b1d;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+}
+
+.pricing .active::before{
+    content: '12% DISCOUNT';
+    position: absolute;
+    color: #fff;
+    font-weight: 50px;
+    letter-spacing: -1px;
+    top: -46px;
+    text-align: center;
+    width: 100.5%;
+    left: -1px;
+    border: 1px solid #e18b1d;
+    height: 45px;
+    line-height: 45px;
+    background: #e18b1d;
+}
+
+.pricing .active a{
+    background: #18212e;
+}
+
+.pricing .active a:hover{
+    background: #26354b;
+}
+
+/* ==================================== TO DO LIST ========================================= */
+
+.todo{
+    background-color:#f8f6f3;
+}
+
+.todo .container{
+    padding: 8% 0px;
+    text-align: left;
+}
+
+.todo img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.todo_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.todo_title h2{
+    color: #18212e;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+.todo_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+    margin-left: 12px;
+}
+
+.todo_load::before{
+    content: '__';
+    position: absolute;
+    top: -7px;  
+    animation: top 1.5s ease-in-out infinite alternate;
+}
+
+.todo_load::after{
+    content: '__';
+    position: absolute;
+    animation: bottom 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes top {
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes bottom {
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+.todo_description p{
+    color: #787887;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 300;
+    margin-bottom: 36px;
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+
+.todo_description .space{
+    margin: 0;
+}
+
+.todo_description b{
+    color: #787887;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.todo_description a{
+    color: #e18b1d;
+    border-bottom: 1px solid #e18b1d;
+    transition: all .3s ease;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.todo_description a:hover{
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #333;
+    
+}
+
+/* ==================================== WE CAN HELP ======================================= */
+
+.help{
+    background: #18212e;
+    position: relative;
+}
+
+.help > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 42%;
+}
+
+.help > .container{
+    padding: 10% 0; 
+}
+
+.help_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.help_title h2{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+.help_description p{
+    padding-top: 20px;
+    color: grey;
+}
+
+.help_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+    margin-left: 12px;
+}
+
+.help_load::before{
+    content: '__';
+    position: absolute;
+    top: -7px;  
+    animation: top 1.5s ease-in-out infinite alternate;
+}
+
+.help_load::after{
+    content: '__';
+    position: absolute;
+    animation: bottom 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes top {
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes bottom {
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+.help .bg-img{
+    position: relative;
+    z-index: 1;
+}
+
+.help .column{
+    position: relative;
+    margin-top: 50px;
+}
+
+.help .box-container{
+    text-align: center;
+    background: #e18b1d;
+    color: #fff;
+    height: 100%;
+}
+
+.help .circle{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    border-radius: 50%;
+    left: 29px;
+}
+
+.help .circle img{
+    position: absolute;
+    top: 64px;
+    left: 67px;
+}
+
+.help .circle::before{
+    position: absolute;
+    content: '99 %';
+    top: 0;
+    right: 0;
+    line-height: 65px;
+    width: 65px;
+    height: 65px;
+    color: #fff;
+    background: #18212e;
+    border-radius: 50%;
+}
+
+.help .column .title h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 43px;
+    line-height: 30px;
+}
+
+.help .box-container::before{
+    content: '';
+    position: absolute;
+    background: rgba(187, 187, 187, 0.829);
+    width: 1px;
+    height: 81%;
+    top: 43px;
+}
+
+/* ================================= SUPERHUMAN ==================================== */
+
+.superhumans{
+    text-align: center;
+    padding: 10% 0;
+}
+
+.superhumans_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.superhumans_title h2{
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+
+.superhumans_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+}
+
+.superhumans_load::before{
+    content: '|';
+    position: absolute;
+    left: 49.3%;
+    animation: left 1.5s ease-in-out infinite alternate;
+}
+
+.superhumans_load::after{
+    content: '|';
+    position: absolute;
+    animation: right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.superhumans_img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.superhumans_img img{
+    width: 100%;
+}
+
+
+.superhumans a{
+    color: #fff;
+    background: #e18b1d;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 600;
+    padding: 20px 39px;
+    transition: all .3s ease;
+}
+
+.superhumans a:hover{
+    background: #a86916;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ================================================ BUSY PEOPLE ======================================= */
+
+.people{
+    text-align: center;
+    padding: 10% 0;
+    background: #f8f6f3;
+}
+
+.people_title p{
+    color: #e18b1d;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.people_title h2{
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+
+.people_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #e18b1d;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.people_load::before{
+    content: '|';
+    position: absolute;
+    left: 49.3%;
+    animation: left 1.5s ease-in-out infinite alternate;
+}
+
+.people_load::after{
+    content: '|';
+    position: absolute;
+    animation: right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.people .ml-2{
+    background: #fff;
+    position: relative;
+    width: 250px;
+    height: 150px;  
+}
+
+.people .ml-2 img{
+    font-size: 10px;
+}
+
+.people .box{
+    position: absolute;
+    top: 40px;
+    left: 62px;
+}
+
+.people .box-2{
+    top: 28px;
+    left: 92px;
+}
+
+.people .box-3{
+    top: 61px;
+    left: 66px;
+}
+
+.people .box-5{
+    top: 60px;
+    left: 70px;
+}
+
+.people .box-6{
+    top: 50px;
+    left: 75px;
+}
+
+.people .box-8{
+    top: 28px;
+    left: 92px;
+}
+
+
+/* ======================================= CONTACT US ============================================ */
+.contact{
+    text-align: center;
+    padding: 7% 0;
+}
+
+.contact .container{
+    background: #e18b1d;
+}
+
+.contact_title{
+    padding-top: 50px;
+}
+
+.contact_title p{
+    color: #fff;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+}
+
+.contact_title h2{
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.contact_load{
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: -5px;
+    position: relative;
+    height: 65px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contact_load::before{
+    content: '|';
+    position: absolute;
+    left: 49.3%;
+    animation: left 1.5s ease-in-out infinite alternate;
+}
+
+.contact_load::after{
+    content: '|';
+    position: absolute;
+    animation: right 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+.contact .contact_form{
+    margin: 0 60px;
+    padding-bottom: 100px;
+}
+
+.contact input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 18px 20px;
+    margin: 10px 0;
+}
+
+.contact textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 18px 20px;
+    margin-top: 10px;
+}
+
+.contact input.btn{
+    margin-top: 30px;
+    width: 20%;
+    color: #fff;
+    border-radius: 0;
+    background: #18212e;
+}
+
+.contact input.btn:hover{
+
+    background: #3c5475;
+}
+
+/* ======================================= FOOTER ============================================= */
+
+footer{
+    background: #18212e;
+}
+
+.footer_social{
+    padding: 100px 0;
+    border-bottom: 1px solid #7B7F85;
+}
+
+footer .social_media{
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+}
+
+footer .circle{
+    position: relative;
+    background: #242e3c;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .2s ease-in-out;
+}
+
+footer .social_media i{
+    position: absolute;
+    line-height: 55px;
+    left: 19px; 
+}
+
+footer .circle:hover{
+    cursor: pointer;
+    background: #b6731b;
+}
+
+footer .request a{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background: #e18b1d;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 0;
+    transition: all .3s ease-in-out;
+}
+
+footer .request a:hover{
+    background: #a86916;
+    text-decoration: none;
+}
+
+.footer_content{
+    padding: 70px 0;
+}
+
+.footer_content .desc{
+    color: #b3bbc6;
+    font-size: 15px;
+    padding-top: 40px;
+    padding-right: 24px;
+}
+
+footer .title{
+    color: #b3bbc6;
+}
+
+footer .title h4{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+footer .title p{
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+footer .about h4{
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+footer .about .text{
+    color: #e18b1d;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+footer .about p{
+    color: #fff;
+    font-size: 13px;
+}
+
+.footer_end{
+    background: #121a24;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer_end span{
+    color: #e18b1d;
+}
+
+.footer_end p{
+    margin-bottom: 0;
+}
